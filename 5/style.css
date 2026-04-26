@@ -1,0 +1,43 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center everything */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a; /* dark blue */
+    font-family: Arial, sans-serif;
+}
+
+/* Canvas styling */
+canvas {
+    background-color: #111; /* game background */
+    
+    /* 🔥 Border */
+    border: 5px solid #00f2ff;
+    border-radius: 12px;
+
+    /* Glow effect */
+    box-shadow: 
+        0 0 10px #00f2ff,
+        0 0 20px #00f2ff,
+        0 0 40px #00f2ff;
+
+    /* Smooth feel */
+    transition: 0.3s;
+}
+
+/* Hover effect */
+canvas:hover {
+    transform: scale(1.03);
+    box-shadow: 
+        0 0 15px #00f2ff,
+        0 0 30px #00f2ff,
+        0 0 60px #00f2ff;
+}
